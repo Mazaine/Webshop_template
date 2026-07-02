@@ -2,7 +2,7 @@
 import { useI18n } from "../i18n";
 import "./SiteFooter.css";
 
-const logoSrc = "/images/nightfall-vault-logo.png";
+const logoSrc = "/images/nightfall-vault-logo-cropped.png";
 
 export function SiteFooter() {
   const { t } = useI18n();
@@ -20,3 +20,4 @@ export function SiteFooter() {
     </footer>
   );
 }
+

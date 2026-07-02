@@ -4,7 +4,7 @@ import { useAuth } from "../hooks/useAuth";
 import { useI18n } from "../i18n";
 import "./SiteHeader.css";
 
-const logoSrc = "/images/nightfall-vault-logo.png";
+const logoSrc = "/images/nightfall-vault-logo-cropped.png";
 
 type SiteHeaderProps = { cartCount: number };
 
@@ -67,3 +67,4 @@ export function SiteHeader({ cartCount }: SiteHeaderProps) {
     </header>
   );
 }
+
