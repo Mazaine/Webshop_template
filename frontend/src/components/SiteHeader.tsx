@@ -4,6 +4,8 @@ import { useAuth } from "../hooks/useAuth";
 import { useI18n } from "../i18n";
 import "./SiteHeader.css";
 
+const logoSrc = "/images/nightfall-vault-logo.png";
+
 type SiteHeaderProps = { cartCount: number };
 
 export function SiteHeader({ cartCount }: SiteHeaderProps) {
@@ -30,8 +32,8 @@ export function SiteHeader({ cartCount }: SiteHeaderProps) {
     <header className="site-header">
       <div className="site-header-inner">
         <Link className="brand" to="/" aria-label={t("brand.name")} onClick={closeMenu}>
-          <span className="brand-mark">WT</span>
-          <span><strong>{t("brand.name")}</strong><small>{t("brand.tagline")}</small></span>
+          <img className="brand-logo" src={logoSrc} alt={t("brand.name")} />
+          <span className="brand-text"><strong>{t("brand.name")}</strong><small>{t("brand.tagline")}</small></span>
         </Link>
 
         <button className="menu-toggle" type="button" onClick={() => setIsMenuOpen((value) => !value)} aria-expanded={isMenuOpen}>
