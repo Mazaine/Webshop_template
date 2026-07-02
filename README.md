@@ -93,6 +93,15 @@ docker compose exec -T frontend npm run build
 docker compose exec -T backend pytest
 ```
 
+
+## Teljes dokumentáció
+
+A teljes magyar projekt dokumentáció itt található:
+
+- docs/PROJECT_DOCUMENTATION.md`r
+
 ## Template Notes
 
 This repository intentionally contains no project-specific branding, demo imports, VIP/reward systems, tournament modules, WordPress/WooCommerce migration scripts, legal PDFs, logos or production secrets. Use it as a neutral base for new webshop projects.
+
+
